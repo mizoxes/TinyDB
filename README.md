@@ -7,8 +7,8 @@ The structure of the database is kept in a text file 'dbinfo/dbinfo.txt' and it 
 ```
 database_name
 	table_name
-		column1_name column1_type
-		column2_name column2_type
+		column1 TYPE
+		column2 TYPE
 		...
 	...
 ...
@@ -26,7 +26,29 @@ rootdir
   |_db2
     |_table3.table
 ```
- 
+
+TinyDB supports the following queries:
+
+```sql
+CREATE DATABASE database_name;
+
+CREATE TABLE table_name (column1 TYPE, column2 TYPE, ...);
+
+INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);
+
+SELECT column1, column2, ... FROM table_name WHERE CONDITION;
+
+UPDATE table_name SET column1=value1, column2=value2, ... WHERE CONDITION;
+
+DELETE FROM table_name WHERE CONDITION;
+```
+
+TYPE could be any one of the supported types: ```INTEGER```, ```REAL```, ```BOOL```, ```DATE```, ```VARCHAR```
+
+CONDITION must respect the following syntax: ```CRITERION1 AND CRITERION2 AND ...```  (*)
+
+where each CRITERION includes 2 operators and 1 operand; for example the following is a valid condition: ```col1 < col2 AND col2 = col3```
 
 Improvement ideas:
 - Use a B-Tree instead of linear search to speed up operations.
+- Write an expression compiler that can compile complex CONDITION expressions into binary trees and evaluate their values for each row. (This would get rid of restriction (*))
