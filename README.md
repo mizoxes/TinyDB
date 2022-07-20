@@ -1,4 +1,7 @@
 # TinyDB
+
+***📧 If you have any questions, remarks or suggestions please contact me on my discord: mizoxes#6004***
+
 TinyDB is a small relational database management system written from scratch in pure Java, it can handle connection requests from 
 multiple users at once, and execute a subset of SQL queries.
 
@@ -62,3 +65,5 @@ TinyDB verifies that username:password combination by looking for a record in th
 Improvement ideas:
 - Use a B-Tree instead of linear search to speed up operations.
 - Write an expression compiler that can compile complex CONDITION expressions into binary trees and evaluate their values for each row. (This would get rid of restriction (*))
+
+***📧 If you have any questions, remarks or suggestions please contact me on my discord: mizoxes#6004***
