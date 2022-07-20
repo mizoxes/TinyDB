@@ -51,7 +51,7 @@ TYPE could be any one of the supported types: ```INTEGER```, ```REAL```, ```BOOL
 
 CONDITION must respect the following syntax: ```CRITERION1 AND CRITERION2 AND ...```  (*)
 
-where each CRITERION includes 2 operators and 1 operand; for example the following is a valid condition: ```col1 < col2 AND col2 = col3```
+where each CRITERION includes 1 operator and 2 operands; for example the following is a valid condition: ```col1 < col2 AND col2 = col3```
 
 ---
 TinyDB also supports user authentication, users must provide a connection string along with their connection request.
