@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TinyDB:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TinyDB_jar</output-path>
+    <root id="archive" name="TinyDB.jar">
+      <element id="module-output" name="TinyDB" />
+    </root>
+  </artifact>
+</component>

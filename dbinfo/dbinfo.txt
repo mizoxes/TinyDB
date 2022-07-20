@@ -1,0 +1,9 @@
+test_db
+	persons
+		id INTEGER
+		firstname VARCHAR 32
+		lastname VARCHAR 32
+_tinyDB_accounts_
+	accounts
+		username VARCHAR 64
+		password VARCHAR 64
