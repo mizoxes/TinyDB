@@ -2,6 +2,8 @@
 
 ***📧 If you have any questions, remarks or suggestions please contact me on my discord: mizoxes#6004***
 
+![alt text](https://github.com/mizoxes/TinyDB/blob/main/show.png?raw=true)
+
 TinyDB is a small relational database management system written from scratch in pure Java, it can handle connection requests from 
 multiple users at once, and execute a subset of SQL queries.
 
